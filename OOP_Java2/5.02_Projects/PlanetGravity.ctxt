@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PlanetGravity
+comment1.params=D\ M
+comment1.target=double\ Gravity(int,\ double)
+comment2.params=planet\ D\ M\ G
+comment2.target=void\ Print(java.lang.String,\ int,\ double,\ double)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

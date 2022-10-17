@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CarsV8
+comment0.text=\r\n\ This\ program\ works\ as\ a\ series\ of\ methods,\ and\ consturctors\ to\ \r\n\ find\ the\ speed\ of\ a\ car,\ given\ time\ and\ distance,\ average\ of\ two\ speeds,\r\n\ and\ diffrence\ of\ two\ speeds,\ and\ prints\ this\ info\ out.\ The\ program\ works\r\n\ with\ CarsV8Tester\r\n\r\n\ @author\ (Charles\ Cahill)\r\n\ @version\ (12/8/2020)\r\n
+comment1.params=Car1\ Car2
+comment1.target=CarsV8(java.lang.String,\ java.lang.String)
+comment2.params=TimeElapsed\ DistanceTraveled
+comment2.target=int\ calcSpeed(double,\ double)
+comment3.params=speed1\ speed2
+comment3.target=int\ calcSpeed(int,\ int)
+comment4.params=speed1\ speed2\ difference
+comment4.target=void\ printCarSpeed(int,\ int,\ int)
+numComments=5

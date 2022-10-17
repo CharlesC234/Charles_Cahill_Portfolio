@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=CarsV3
+comment0.text=\r\n\ This\ program\ calculates\ car\ speed\ based\ on\ time\ elapsed\ (in\ hrs)\ and\r\n\ distance\ travled\ (in\ miles).\ The\ program\ calculates\ two\ diffrent\r\n\ car\ speeds\ and\ then\ finds\ an\ average,\ and\ diffrance\ between\ them.\r\n\r\n\ @author\ (Charles\ Cahill)\r\n\ @version\ (12/4/2020)\r\n
+comment1.params=
+comment1.target=CarsV3()
+comment2.params=TimeElapsed\ DistanceTraveled
+comment2.target=double\ calcSpeed(double,\ double)
+comment3.params=speed1\ speed2
+comment3.target=double\ calcDifference(double,\ double)
+comment4.params=speed1\ speed2\ difference
+comment4.target=void\ printCarSpeed(double,\ double,\ double)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

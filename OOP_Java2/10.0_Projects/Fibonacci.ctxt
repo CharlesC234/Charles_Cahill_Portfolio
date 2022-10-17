@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Fibonacci
+comment1.params=
+comment1.target=Fibonacci()
+comment2.params=n
+comment2.target=int\ numberOfDigits(int)
+comment3.params=
+comment3.target=void\ menu()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

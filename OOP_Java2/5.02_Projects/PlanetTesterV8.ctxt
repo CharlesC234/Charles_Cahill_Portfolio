@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PlanetTesterV8
+comment0.text=\r\n\ @purpose\:\ Tester\ to\ create\ two\ PlanetV8\ objects\r\n\r\n\ @author\ APCS\ Team\r\n\ @version\ FLVS\ 2020\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

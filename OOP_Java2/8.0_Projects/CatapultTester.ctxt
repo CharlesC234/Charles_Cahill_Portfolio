@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=CatapultTester
+comment0.text=\r\n\ This\ class\ is\ the\ tester\ class\ for\ Catapult2\ class.\ This\ class\r\n\ creates\ a\ 2d\ array\ with\ intial\ values,\ and\ prints\ the\ finalized\ array\ out.\r\n\ @author\ (Charles\ Cahill)\r\n\ @version\ (3/11/2021)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

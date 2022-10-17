@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=catapult2
+comment0.text=\r\n\ This\ class\ is\ a\ client\ class\ for\ the\ catapult\ tester\ class.\r\n\ This\ class\ takes\ a\ 2d\ array\ with\ degrees\ and\ velocity\ values\ \r\n\ and\ fills\ it\ up\ with\ distance\ values\ from\ the\ given\ values.\r\n\r\n\ @author\ (Charles\ Cahill)\r\n\ @version\ (3/11/2021)\r\n
+comment1.params=c
+comment1.target=catapult2(double[][])
+comment2.params=
+comment2.target=double[][]\ calcDistance()
+numComments=3

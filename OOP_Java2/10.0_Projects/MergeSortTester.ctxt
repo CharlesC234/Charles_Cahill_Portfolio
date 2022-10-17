@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=MergeSortTester
+comment0.text=\r\n\ This\ class\ uses\ Selection,\ Insertion,\ and\ merge\ sort\ to\ \r\n\ sort\ an\ array\ full\ of\ store\ objects\ in\ specific\ ways.\r\n\r\n\ @author\ (Charles\ Cahill)\r\n\ @version\ (4/27/2021)\r\n
+comment1.params=Info
+comment1.target=void\ Print(MergeSort[])
+comment2.params=Info\ type
+comment2.target=MergeSort[]\ SelectionName(MergeSort[],\ int)
+comment3.params=source\ type
+comment3.target=MergeSort[]\ insertionNumber(MergeSort[],\ int)
+comment4.params=Info\ type
+comment4.target=MergeSort[]\ SelectionPrice(MergeSort[],\ int)
+comment5.params=Info\ l\ m\ r
+comment5.target=void\ merge(MergeSort[],\ int,\ int,\ int)
+comment6.params=Info\ l\ r
+comment6.target=void\ sort(MergeSort[],\ int,\ int)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

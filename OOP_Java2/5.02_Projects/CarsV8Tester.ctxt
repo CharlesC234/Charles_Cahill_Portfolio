@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=CarsV8Tester
+comment0.text=\r\n\ This\ program\ is\ the\ client\ class\ to\ CarsV8.\ This\ program\r\n\ uses\ the\ methods\ identified\ in\ CarsV8\ to\ create\ objects,\ \r\n\ and\ find\ the\ speed\ of\ two\ diffrent\ cars,\ the\ average\ speed\ of\ the\ cars,\ and\r\n\ the\ difference\ of\ speeds.\r\n\r\n\ @author\ (Charles\ Cahill)\r\n\ @version\ (12/8/2020)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

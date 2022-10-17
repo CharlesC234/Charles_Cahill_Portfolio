@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=MergeSort
+comment0.text=\r\n\ This\ class\ is\ an\ implementation\ class\ for\ the\ MergeSortTester\ class.\ It\ \r\n\ defines\ store\ objects.\r\n\r\n\ @author\ (Charles\ Cahill)\r\n\ @version\ (4/30/2021)\r\n
+comment1.params=n\ pN\ pP\ qA
+comment1.target=MergeSort(java.lang.String,\ int,\ double,\ int)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=int\ getProductNumber()
+comment4.params=
+comment4.target=double\ getProductPrice()
+comment5.params=
+comment5.target=int\ getQuantityAvailable()
+comment6.params=N
+comment6.target=void\ setName(java.lang.String)
+comment7.params=pN
+comment7.target=void\ setProductNumber(int)
+comment8.params=pP
+comment8.target=void\ setProductPrice(int)
+comment9.params=qA
+comment9.target=void\ setQuantityAvailable(int)
+numComments=11
