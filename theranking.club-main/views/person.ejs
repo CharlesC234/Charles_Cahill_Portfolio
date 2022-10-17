@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= person.fname %> <%= person.lname %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/profile.css" />
+  </head>
+  <body>
+  <%- include('./partials/navbar'); %>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    
+ <div class="container" style="background-color: #333333; border-radius: 25px ; height: auto; margin-bottom: 30px;">
+    
+
+  
+
+    <header>
+        <div class="profile">
+          <div class="profile-image">
+            <img src="/images/<%= person.photo %>" alt="" />
+          </div>
+
+          <div class="profile-user-settings">
+            <h1 class="profile-user-name">
+              <%= person.fname %> <%= person.lname %>
+            </h1>
+          </div>
+
+          <div class="profile-stats">
+            <ul>
+              <li>
+                Year:
+                <span class="profile-stat-count"><%= person.currentYear %></span>
+              </li>
+              <li>
+                Rating:
+                <span class="profile-stat-count"><%= person.avgRate %> / 10</span>
+              </li>
+               <li>
+                Ratings:
+                <span class="profile-stat-count"><%= person.numRate %></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile-bio">
+            <p><span class="profile-real-name">What do you rate them:</span></p>
+            <form
+              action="/persons/rate/<%= person.fname %>_<%= person.lname %>/FORM"
+              method="post"
+            >
+              <select required name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        <!-- End of profile section -->
+      <!-- End of container -->
+    </header>
+  </div>
+</div>
+
+    <main style="align-items: center;">
+      <div class="container" style=" background-color: #333333; width: auto; height: auto; border-radius: 25px; padding: 2px;padding-left: 15px;
+      padding-right: 15px;">
+        <div class="gallery" style="margin-top:25px;">
+          <% person.instaPhotos.forEach(function(photo) { %>
+
+          <div class="gallery-item" tabindex="0">
+            <img
+              src="/images/<%= photo %>"
+              class="gallery-image"
+              alt="photo"
+              style="border-radius: 25px;"
+            />
+          </div>
+
+          <% }); %>
+        </div>
+      </div>
+        <!-- End of gallery -->
+
+      <!-- End of container -->
+
+
+   <div class="comments-submit">
+      <form action="/persons/comment/<%= person.fname %>_<%= person.lname %>" method="post" >
+  <label for="comment">Submit a Comment:</label><br />
+  <input  type="text" id="comment" style=" height: 30px; border-radius: 25px;"name="comment" required /><br />
+  
+  <input class="button"  type="submit" value="Submit" />
+
+          </form>
+   </div>
+        
+
+
+
+<div class="comments-section ">
+
+    <% person.comments.reverse().forEach(function(comment) { %>
+      <div class="comments" style="border-radius: 25px;">
+       <h1><%= comment.icon %> <%= comment.author %>:<br></h1>  
+           
+         <p><%= comment.comment %></p>
+         <h5 class="time"><%= comment.submitted %></h5>
+         </div>
+         <% }); %>
+        </div>
+    </main>
+    <!-- partial -->
+  </body>
+</html>

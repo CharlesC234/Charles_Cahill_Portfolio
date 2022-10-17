@@ -1,0 +1,20 @@
+<%- include('partials/navbar'); %>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  
+
+<ul>
+      <% persons.forEach(function(person) { %>
+      <a href="/persons/<%= person.fname %>_<%= person.lname %>">
+        <li>
+          <%= person.fname %>,
+           <%= person.lname %>,
+           <%= person.avgRate %>
+        </li>
+        </a>
+      <% }); %>
+    </ul>
+
+
+
+
+

@@ -1,0 +1,40 @@
+<%- include('partials/navbar'); %>
+<head>
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/stylesheets/chat.css" />
+</head>
+
+<body>
+  <br></br>
+  <br></br>
+  
+  
+ 
+     <iframe id="ccframe" src="chats/chatlog" title="chatlog">
+     
+     
+     </iframe> 
+
+  
+
+  <div class="comments-submit">
+    <form action="/chats/" method="post">
+      <label for="comment">Send a message:</label><br />
+      <input style="border-radius: 25px; height: 30px;" type="text" id="comment" name="comment" required /><br />
+
+      <input class="button" type="submit" value="Submit" />
+    </form>
+  </div>
+
+
+
+</body>
+
+<script>
+
+    var myDiv = document.getElementById("ccframe"); 
+    myDiv.scrollTop = myDiv.scrollHeight;
+
+</script>

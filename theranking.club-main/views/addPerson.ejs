@@ -1,0 +1,102 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/stylesheets/Addperson.css" />
+<title>Add Person Form</title>
+<style>
+  body {  padding: 10% display: flex; } input[type=text], select { width: 100%; padding: 12px
+  20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc;
+  border-radius: 4px; box-sizing: border-box; } input[type=submit] { width:
+  100%; background-color: #a32c08; color: white; padding: 14px 20px; margin: 8px
+  0; border: none; border-radius: 4px; cursor: pointer; }
+
+
+
+  input[type=submit]:hover { background-color: #2c2c2c; } div {  background-color: #21211; padding: 20px; }
+</style>
+<div style="display: inline-block;align-items: center; margin-left: -25px; width: 100%;">
+  <div style="display: inline-block;align-items: center; margin-left: -15px; width:100%; background-color: #333333;
+  border-radius: 25px; max-width: 1000px; margin-top: 20px;">
+
+  <form style="align-items: center;"action="/persons/add" method="post" >
+    <label for="fname" class="whiteText">First name:</label><br />
+    <input type="text" id="fname" name="fname" required  style="border-radius: 25px; align-items: center;
+    width: 60%; margin-left: auto; margin-right: auto; margin-bottom: 30px; min-width: 325px;"/><br />
+    <label for="lname" class="whiteText">Last name:</label><br />
+    <input type="text" id="lname" name="lname" required style="border-radius: 25px; align-items: center;
+    width: 60%; margin-left: auto; margin-right: auto; margin-bottom: 30px;  min-width: 325px;" /><br />
+
+    <p class="whiteText">What year are they?</p>
+    <div class="list">
+    <ul>
+    <li><input 
+      required
+      type="radio"
+      id="Freshman"
+      name="currentYear"
+      value="Freshman"
+    /></li>
+    <label for="Freshman" class="smallText">Freshman</label><br />
+    <li><input 
+      required
+      type="radio"
+      id="Sophomore"
+      name="currentYear"
+      value="Sophomore"
+    /></li>
+    <label for="Sophomore" class="smallText">Sophomore</label><br />
+    <li><input 
+      required
+      type="radio"
+      id="Junior"
+      name="currentYear"
+      value="Junior"
+    /></li>
+    <label for="Junior" class="smallText">Junior</label><br />
+    <li><input 
+      required
+      type="radio"
+      id="Senior"
+      name="currentYear"
+      value="Senior"
+    /></li>
+    <label for="Senior" class="smallText">Senior</label><br />
+    <li><input 
+      required
+      type="radio"
+      id="GradStudent"
+      name="currentYear"
+      value="GradStudent"
+    /></li>
+     <li><label for="GradStudent" class="smallText">GradStudent</label><br /></li>
+    </ul>
+    </div>
+
+ 
+
+    <p class="whiteText">What is there user name on instagram?</p>
+    <input type="text" id="insta" name="insta" style="border-radius: 25px; align-items: center;
+    width: 60%; margin-left: auto; margin-right: auto; margin-bottom: 30px;  min-width: 325px;" required/><br />
+
+    <p class="whiteText">What do you think of them:</p>
+
+    <select required name="rating" class="textInputRate">
+<option     value="1">1</option>
+<option    value="2">2</option>
+<option    value="3">3</option>
+<option     value="4">4</option>
+<option     value="5">5</option>
+<option     value="6">6</option>
+<option    value="7">7</option>
+<option     value="8">8</option>
+<option     value="9">9</option>
+<option     value="10">10</option>
+
+</select>
+</div>
+
+<br></br>
+    <input type="submit" value="Submit" style="align-items: center; margin-left: -15px; margin-right: auto;
+    width: 25%; fill: #a32c08; border-radius: 25px; margin-top: 0px; min-width: 200px; font-size: x-large;" />
+
+  </form>
+</div>

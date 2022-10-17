@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/navbar'); %>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/home.css" />
+  </head>
+  <body>
+    <nav style="width: 100%; margin-top: 0px; height: 500px;">
+      <div class="CurrentStandings" style="align-items: center; margin-top: 40px">
+        <image src="logo.png" style="display: flex; width: 20%; height: 20%;align-items: center; 
+         margin-bottom: 140px; border: none; padding-top: 5%; margin-left: auto; margin-top: 0px;
+         margin-right: auto; border-radius: 0%; min-width: 200px; max-width: 330px; max-height: 330px;"/>
+      </div>
+
+      <div
+        id="container"
+        style="
+          align-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          display: inline-block;
+          height: auto;
+          width: 100%;
+        "
+      >
+        <container1 class="ContainerRow" style="width: auto; height: 100%">
+          <container
+            class="ContainerColumn"
+            style="align-items: center; margin-left: auto; margin-right: auto"
+          >
+            <div class="column1Top">
+              <div class="centerText1"><%= persons[2].avgRate %></div>
+              <div
+                id="container"
+                class="imageAbsolute"
+                style="width: 100%; align-items: center"
+              >
+                <img class="imageClass1" src="Bronze.png" />
+              </div>
+              <div
+                id="container"
+                class="imageAbsolute"
+                style="width: 100%; align-items: center"
+              >
+                <img class="imageClass2" src="/images/<%= persons[2].photo %>" />
+              </div>
+            </div>
+            <div class="column1Bottom">
+              <div class="person2" style="width: 100%;">
+                <a
+                  class="podiumNames" >
+                  <h2 style="font-size: x-large; margin-top: 20px;"> <%= persons[2].fname %> <%= persons[2].lname %></h2>
+                  </a>
+                  <a style="border-radius: 25px; align-items: center; position: absolute; display: flex; width: 100%;
+                  height: 320px; background-color: transparent; margin-right: 4px; margin-left: auto; margin-top: -275px;
+                  min-width: none;" href="/persons/<%= persons[2].fname %>_<%= persons[2].lname %>"></a>
+              </div>
+            </div>
+          </container>
+
+          <container class="ContainerColumn">
+            <div class="column2Top">
+              <div class="centerText2"><%= persons[0].avgRate %></div>
+              <div
+                id="container"
+                class="imageAbsolute"
+                style="width: 100%; align-items: center"
+              >
+                <img class="imageClass3" src="Gold.png" />
+              </div>
+              <div
+                id="container"
+                class="imageAbsolute"
+                style="width: 100%; align-items: center"
+              >
+                <img class="imageClass4" src="/images/<%= persons[0].photo %>" />
+              </div>
+            </div>
+            <div class="column2Bottom" style="text-align: center;">
+              <div class="person2" style="text-align: center; width: 100%;">
+                <a
+                  class="podiumNames"
+                  <h2> <%= persons[0].fname %> <%= persons[0].lname %></h2>
+                </a>
+                <a style="border-radius: 25px; align-items: center; position: absolute; display: flex; width: 100%;
+                  height: 415px; background-color: transparent; margin-right: 4px; margin-left: auto; margin-top: -375px;
+                  min-width: none;" href="/persons/<%= persons[0].fname %>_<%= persons[0].lname %>"></a>
+              </div>
+            </div>
+          </container>
+
+          <container class="ContainerColumn">
+            <div class="column3Top">
+              <div class="centerText3"><%= persons[1].avgRate %></div>
+              <div
+                id="container"
+                class="imageAbsolute"
+                style="width: 100%; align-items: center"
+              >
+                <img class="imageClass5" src="Silver.png" />
+              </div>
+              <div
+                id="container"
+                class="imageAbsolute"
+                style="width: 100%; align-items: center"
+              >
+                <img class="imageClass6" src="/images/<%= persons[1].photo %>" />
+              </div>
+            </div>
+            <div class="column3Bottom">
+              <div class="person2" style="align-items: center; margin-left: auto; margin-right: auto; width: 100%;">
+                <a
+                  class="podiumNames">
+                  <h2 style="font-size: x-large; margin-top: 20px;"> <%= persons[1].fname %> <%= persons[1].lname %></h2>
+                  </a>
+                  <a style="border-radius: 25px; align-items: center; position: absolute; display: flex; width: 100%;
+                  height: 365px; background-color: transparent; margin-right: 4px; margin-left: auto; margin-top: -325px;
+                  min-width: none;" href="/persons/<%= persons[1].fname %>_<%= persons[1].lname %>"></a>
+              </div>
+            </div>
+          </container>
+        </container1>
+      </div>
+
+      <h4 class="scoreboardT">Scoreboard</h4>
+      <svg
+        class="scoreboardRect"
+        width="125px"
+        height="5"
+        style="display: flex; width: auto"
+      >
+        <rect
+          class="rectangleS"
+          width="125"
+          height="5"
+          rx="25"
+          ,
+          ry="25"
+          style="display: flex"
+        />
+      </svg>
+
+      <div id="container">
+        <% persons.forEach(function(person,index) { %>
+        <div class="row">
+          <div class="place"><%= index +1 %></div>
+          <div id="container" style= "display: flex;width: fit-content; margin-right: 0px; margin-left: auto;"
+          ><img src="/images/<%= person.photo %>" /></div>
+          <div class="person">
+            <a
+              class="listNames"
+              href = "https://www.javatpoint.com/"><%= person.fname %>
+              </a>
+          </div>
+          <div class="score"><%= person.avgRate %></div>
+          <a style="border-radius: 25px; align-items: center; position: absolute; display: flex; width: 100%;
+                  height: 80px; background-color: transparent; margin-right: 4px; margin-left: auto; margin-top: 0px;
+                  min-width: none;" href="/persons/<%= person.fname %>_<%= person.lname %>"></a>
+        </div>
+
+        <% }); %>
+      </div>
+      <container style="width: 50%">
+        <div style="height: 150px; width: 80%; background-color: #a32c08; border-radius: 25px; margin-left: auto; 
+        margin-right: auto; max-width: 800px;">
+        <form style="margin-top: 5px; padding-top: 5px; padding-bottom: 10px;" action="/email" method="POST">
+          <h4 style="margin-top: 20px; margin-bottom: 10px; font-size: large">
+            Enter your email for password updates:
+          </h4>
+          <input
+            type="email"
+            id="Email"
+            name="email"
+            style="
+              width: 70%;
+              height: 20px;
+              border-radius: 25px;
+              align-items: center;
+              display: inline-block;
+              margin-left: 0%;
+              max-width: 500px;
+            "
+          /><br /><br />
+          <input
+            type="submit"
+            value="Submit"
+            style="
+              width: 40%;
+              height: 30px;
+              color: white;
+              background-color: #333333;
+              margin-left: 0%;
+              align-items: center;
+              display: inline-block;
+              border-radius: 5px;
+              max-width: 200px;
+              border: none;
+            "
+          />
+        </form>
+      </div>
+      </container>
+
+      <div class="nav-right"></div>
+    </nav>
+  </body>
+</html>

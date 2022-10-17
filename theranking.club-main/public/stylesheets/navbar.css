@@ -1,0 +1,48 @@
+:root {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+x {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+y {
+  float: left;
+}
+
+y a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+  font-family: "Open Sans", Arial, sans-serif;
+
+  line-height: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+y a:hover:not(.active) {
+  background-color: #111;
+}
+
+w {
+  display: grid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.active {
+  background-color: #a32c08;
+}
