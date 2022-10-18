@@ -1,0 +1,3 @@
+Portrait is a mobile app project that was created using React Native and Javascript. The app is made to be a social media style app that centers around
+users being able to post photos, videos, and text. Currently, most of the code is focused on the frontend. Both the frontend and the backend are still a
+work in progress. Creating this app has been extremly educational for me, on both the frontend and backend side of things.
